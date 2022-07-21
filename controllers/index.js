@@ -1,3 +1,4 @@
+
 const { db } = require('../models/ride');
 const  WaitTime = require('../models/waitTime');
 
