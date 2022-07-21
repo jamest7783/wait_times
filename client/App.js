@@ -6,7 +6,7 @@ import react from 'react'
 const App = () => {
     return (
       <div>
-        <Header />
+        <Header Header/>
         <main>
          {/* <Routes>
             <Route path="/api" element={<Home />} />
