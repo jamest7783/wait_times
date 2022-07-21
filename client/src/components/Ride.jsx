@@ -10,8 +10,8 @@ const rideCard = ({ info }) => {
           <h3>
             <p>{ info.name }</p>
             <p>{ info.description }</p>
-            <p>{ info.reviews }</p>
-            <p>{ info.waitTimes}</p>
+            <p>Review { info.reviews }</p>
+            <p>Wait Time{ info.waitTimes}</p>
           </h3>
         </div>
       </div>

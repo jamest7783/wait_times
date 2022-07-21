@@ -1,8 +1,8 @@
 const db = require('../db')
 const Attraction  = require('../models/attraction')
 const Ride = require('../models/ride')
-const WaitTime = require('../models/waitTime')
-const Review = require('../models/review')
+//const WaitTime = require('../models/waitTime')
+//const Review = require('../models/review')
 
 // Connect to the database
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -36,7 +36,7 @@ const main = async () => {
   })
   att4.save()
 
-
+  /*
   const newWaitTime = await new WaitTime({
     ride_id: 'fdfdf',
     time: '10'
@@ -46,18 +46,19 @@ const main = async () => {
     ride_id: 'fdfdf',
     review: 'this is a review'
   })
+  */
 
 
   const rides = [
     {
-      name: 'Widow Maker',
+      name: '%%%%%%%%%%%%%Widow Maker',
       description:
         'The Widow Maker launches 12 passengers through two cycles of positive and negative "G" experiences- back to back! Riders must be at least 52" tall to ride.',
       image:
         'https://s.abcnews.com/images/GMA/220326_gma_carr1_hpMain_1x1_384.jpg',
       attraction: att0._id,
-      reviews: 'review',
-      waitTime: 'waittime'
+      reviews: [],    
+      waitTime: []
     },
     {
       name: 'G Force',
@@ -66,8 +67,8 @@ const main = async () => {
       image:
         'https://www.zamperla.com/wp-content/uploads/2021/03/ZPL_Rides-MiniTeaCup-02.jpg',
       attraction: att1._id,
-      reviews: 'review',
-      waitTime: 'waittime'
+      reviews: [],    
+      waitTime: []
     },
     {
       name: 'Crazy River',
@@ -75,8 +76,8 @@ const main = async () => {
       image:
         'https://www.the-sun.com/wp-content/uploads/sites/6/2020/08/NINTCHDBPICT000602930853.jpg',
       attraction: att2._id,
-      reviews: 'review',
-      waitTime: 'waittime'
+      reviews: [],    
+      waitTime: []
     },
     {
       name: 'Last Breathe',
@@ -85,8 +86,8 @@ const main = async () => {
       image:
         'https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/shutterstock_152171519.jpg',
       attraction: att3._id,
-      reviews: 'review',
-      waitTime: 'waittime'
+      reviews: [],    
+      waitTime: []
     },
     {
       name: 'Wheel of Motion',
@@ -95,15 +96,15 @@ const main = async () => {
       image:
         'https://waldameer.com/wp-content/uploads/2019/03/img_flying-swings-1.jpg',
       attraction: att4._id,
-      reviews: 'review',
-      waitTime: 'waittime'
+      reviews: [],    
+      waitTime: []
     }
   ]
 
-  console.log('Created some rides!')
-  await Ride.insertMany(rides)
-  await WaitTime.insertMany(newWaitTime)
-  await Review.insertMany(reviews)
+  console.log(rides)
+  //await Ride.insertMany(rides)
+  //await WaitTime.insertMany(newWaitTime)
+  //await Review.insertMany(reviews)
 }
 
 const run = async () => {
