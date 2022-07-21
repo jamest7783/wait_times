@@ -10,4 +10,4 @@ const WaitTime = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('waitTime', WaitTime)
+module.exports = mongoose.model('WaitTime', WaitTime)   // WaitTime --> waittimes 
