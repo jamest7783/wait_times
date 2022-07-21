@@ -1,11 +1,11 @@
-const { Schema } = require('mongoose')
+const mongoose = require( 'mongoose' )
+const Schema = mongoose.Schema
 
-const attractionSchema = new Schema(
+const Attraction = new Schema(
   {
     name: { type: String, required: true },
-    url: { type: String, required: true }
   },
   { timestamps: true }
 )
 
-module.exports = attractionSchema
+module.exports = mongoose.model('attractions', Attraction)
