@@ -11,9 +11,6 @@ router.get('/rides', async (req, res) => {
     res.json( rides )
 })
 
-router.post('/wait-time', async ( req, res ) => {
-    res.send( 'making wait time' )
-    controllers.createWaitTime
-})
+router.post('/wait-times', controllers.createWaitTime)
 
 module.exports = router;

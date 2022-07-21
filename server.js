@@ -6,19 +6,15 @@ const db = require('./db');
 const Ride = require( './models/ride.js' )
 const { Attraction } = require( './models/attraction.js' )
 
-// require() imports and middleware here ^ ///////
-
-console.log( Ride )
-
-
 
 
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
-
 app.use(express.json())
+app.use( logger( 'dev' ) )
+app.use( cors(  ) )
 
 app.use('/api', routes);
 

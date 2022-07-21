@@ -1,12 +1,23 @@
 const db = require('../db')
 const { Attraction } = require( '../models/attraction' )
 const { Ride } = require('../models')
+const { WaitTime } = require( '../models/waitTime' )
+const waitTime = require('../models/waitTime')
 
 
 // Connect to the database
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+
+
+    const newWaitTime = await new WaitTime({
+        ride_id: 'fdfdf',
+        review: 'this is a review',
+        time: '10'
+
+    })
+
 
     const att0 = await new Attraction({
         name: 'Teacups'
@@ -43,6 +54,7 @@ const main = async () => {
 
     console.log("Created some rides!")
     await Ride.insertMany( rides )
+    await WaitTime.insertOne( newWaitTime )
 
 }
 
