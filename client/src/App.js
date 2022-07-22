@@ -9,17 +9,17 @@ import Rides from './pages/Rides'
 const App = () => {
     
   return (
-      <div>
+      <div className='page'>
         < Header />
         <main> 
 
-          <Routes>
-            
-            <Route path='/' element={<Home />} />
-            <Route path='/rides' element={<Rides />} />
-            
+            <Routes>
+              
+              <Route path='/' element={<Home />} />
+              <Route path='/rides' element={<Rides />} />
+    
+            </Routes>
 
-          </Routes>
         </main>
       </div>
     )

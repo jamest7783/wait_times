@@ -4,7 +4,6 @@ const cors = require( 'cors' )
 const routes = require('./routes');
 const db = require('./db');
 const Ride = require( './models/ride.js' )
-const { Attraction } = require( './models/attraction.js' )
 
 
 const PORT = process.env.PORT || 3001;

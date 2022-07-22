@@ -3,14 +3,13 @@ const Schema = mongoose.Schema
 
 const Ride = new Schema(
     {
+        
         name: { type: String, required: true },
         description: { type: String, required: true },
         image: { type: String, required: true },
-        attraction: { type: Schema.Types.ObjectId, ref: 'Attraction' },
         reviews: { type: Array, required: false },
         waitTimes: { type: Array, required: false  }
 
-        
     },
     { timestamps: true },
 )

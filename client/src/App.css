@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page {
+  width: 100vw;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .name {
+  text-align: center;
+} */
+
+img {
+  height: 300px;
+  width: 450px;
+}
+ 
+.rideCard {
+  padding: 10px;
+  grid-column: 2;
+
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3em;
+  font-size:  large;
+  text-shadow: 2px 2px red;
 }
