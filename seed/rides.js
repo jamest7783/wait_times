@@ -1,10 +1,8 @@
 const db = require('../db')
 const Attraction  = require('../models/attraction')
 const Ride = require('../models/ride')
-//const WaitTime = require('../models/waitTime')
-//const Review = require('../models/review')
 
-// Connect to the database
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
@@ -36,22 +34,10 @@ const main = async () => {
   })
   att4.save()
 
-  /*
-  const newWaitTime = await new WaitTime({
-    ride_id: 'fdfdf',
-    time: '10'
-  })
-
-  const reviews = await new Review({
-    ride_id: 'fdfdf',
-    review: 'this is a review'
-  })
-  */
-
-
+ 
   const rides = [
     {
-      name: '%%%%%%%%%%%%%Widow Maker',
+      name: 'Widow Maker',
       description:
         'The Widow Maker launches 12 passengers through two cycles of positive and negative "G" experiences- back to back! Riders must be at least 52" tall to ride.',
       image:
