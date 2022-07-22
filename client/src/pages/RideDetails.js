@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import RideDetails from '../components/RideDetails'
+import RideDetail from '../components/RideDetail'
 
 const RideDetails = () => {
 
@@ -8,7 +8,6 @@ const RideDetails = () => {
 
   const getRideDetails = async () => {
       const res = await axios.get('http://localhost:3001/api/rides')
-      console.log( 'ssdfdsf' )
       setRideDetails( res.data )
  
   }
@@ -21,7 +20,7 @@ const RideDetails = () => {
       <div className='card'>
           { rideDetails.map( ride => (
             
-              <RideDetails info={ ride }
+              <RideDetail info={ ride }
               key={ ride.name }/>
           ) ) }
       </div>

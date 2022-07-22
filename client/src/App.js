@@ -5,7 +5,7 @@ import react from 'react'
 import Home from './pages/Home.js'
 import Header from './components/Header'
 import Rides from './pages/Rides'
-import RideDetails from './components/RideDetails'
+import RideDetails from './pages/RideDetails'
 
 const App = () => {
     
