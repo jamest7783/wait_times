@@ -31,10 +31,9 @@ const RideDetail = ({ info }) => {
 
 
   return (
-    <div className="rideDetails"  >
+    <div className="rideDetail" style={{ background: `url(${info.image})`, backgroundSize: 'cover' } } >
       
       <p className='description'>{ info.description }</p>
-
       <form onSubmit={ handleReview }>
         <input
           type="text"
@@ -45,7 +44,7 @@ const RideDetail = ({ info }) => {
             setReview( e.target.value )
           }}>
         </input> { info.reviews }
-        <button type='submit'>SUBMIT REVIEW</button>
+        <button type='submit'>Submit Review</button>
       </form>
 
       <form onSubmit={ handleWaitTime}>
@@ -58,13 +57,30 @@ const RideDetail = ({ info }) => {
             setWaitTime( e.target.value )
           }}>
         </input> { info.waitTime }
-        <button type='submit'>SUBMIT WAIT TIME</button>
+        <button type='submit'>Submit Wait Time</button>
       </form>
+      <div className="ridesReviews">
+        <div > Reviews
+          { info.reviews.map( review => [
+            <p>{review.review}</p>
+          ] ) }
+        </div>
+        <div> Wait Times
+          { info.waitTimes.map( wait => [
+            <p>{wait.time}</p>
+          ] ) }
+        </div>
+      </div>
+
  
     </div>
+
 
     )
   }
   export default RideDetail
+
+
+ 
 
 

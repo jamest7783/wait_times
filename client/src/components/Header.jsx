@@ -3,9 +3,9 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="/">     Home      </Link>
-        <Link to="/rides">      Rides       </Link>
-        <Link to="/rides/rideDetails">       Rides Details     </Link>
+        <Link to="/">Home</Link>
+        <Link to="/rides">Rides</Link>
+        <Link to="/rides/rideDetails">Ride Reviews</Link>
         
       </nav>
     </header>

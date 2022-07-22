@@ -1,70 +1,47 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Stardome
+## Date: 7/22/22
+### By: Emily Byrne, Lauren Grubb, and James Jewitt
+#### [GitHub](https://github.com/jamest7783/wait_times) | [Game Website]()
+---
+### **_Description_**
+#### This is a game we made in a day and a half for General Assembly. We created a website for our Amusement Park where one can view the different rides, leave a review for a ride, and provide a wait time.
+---
+### **_Technologies_**
+- React.js
+- Express
+- MongoDB
+- Node.js
+- CSS
+- Javascript
+- GitHub
+- VSCode
+---
+### **_Overview_**
+---
+Since 1928, there’s only ever been fun and adventure. We’ve been creating memories as Nevada's top destination for fun family fun for 94 years. We’re your destination for creating experiences that last a lifetime.
+### **_Screenshots_**
+![]()
+![]()
+![]()
+![]()
+---
+### **_Future Updates_**
+- [x] Build backend to display rides
+- [x] Build backend to allow user input
+- [x] Create web page
+- [x] Have nav bar with different page options
+- [x] User can submit review
+- [x] User can submit wait time
+- [x] Review and wait time display
+- [x] Style pages
+---
+### **_Credits_**
+- [Drop Rollercoaster](https://s.abcnews.com/images/GMA/220326_gma_carr1_hpMain_1x1_384.jpg)
+- [Teacups](https://www.zamperla.com/wp-content/uploads/2021/03/ZPL_Rides-MiniTeaCup-02.jpg)
+- [Lazy River](https://www.the-sun.com/wp-content/uploads/sites/6/2020/08/NINTCHDBPICT000602930853.jpg)
+- [Roller Coaster](https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/shutterstock_152171519.jpg)
+- [Swings](https://waldameer.com/wp-content/uploads/2019/03/img_flying-swings-1.jpg)
+- John Jacobs
+### **_Future Developments_**
+- Store more reviews
+- The rides would have an onClick so they can just select the ride and it will bring them directly to the reviews/wait times

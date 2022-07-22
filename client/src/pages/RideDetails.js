@@ -17,7 +17,7 @@ const RideDetails = () => {
   },[])
 
   return (
-      <div className='card'>
+      <div className='all-details'>
           { rideDetails.map( ride => (
             
               <RideDetail info={ ride }

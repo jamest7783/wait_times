@@ -12,20 +12,23 @@ body {
 
 .name {
   text-align: center;
-  font-size:  30px;
-  font-family: 'Press Start 2P';
-  color: blue;
-  text-shadow: 1.3px 1.3px gray;
+  font-size:  20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: bold;
+
+  text-shadow: 3px 3px red; 
 } 
 
 img {
-  height: 300px;
-  width: 450px;
+  height: 150px;
+  width: 225px;
 }
  
 .rideCard {
   padding: 30px;
   grid-column: 2;
+
 
 }
 
@@ -33,6 +36,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 
 }
 
@@ -46,13 +50,22 @@ nav {
   width: 100vw;
   background-color: blue;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   height: 3em;
   font-size:  large;
-  text-shadow: 2px 2px red;
+  font-weight: bold;
+  text-shadow: 1px 1px red; 
   padding-right: 40px;
   padding-left: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 link {
@@ -60,3 +73,158 @@ link {
   justify-content: space-between;
   align-items: space-between;
 }
+.all-details {
+  height: 100vh;
+  width: 100vw;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.rideDetail {
+  margin: 20px;
+  height: 250px;
+  width: 40vw;
+  color: white;
+  border: 5px solid white;
+
+} 
+
+.detailImage {
+  height: 80px;
+  width: 120px;
+}
+
+.hoursticketsevents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.home {
+  margin: 50px;
+}
+
+h2 {
+  background-color: blue;
+}
+
+.hours {
+  height: 150px;
+  width: 150px;
+  background-image: url('https://media.istockphoto.com/photos/wall-clock-isolated-on-white-ten-past-ten-picture-id590618818?k=20&m=590618818&s=612x612&w=0&h=ukPrajYdI1PZxXm5h2N0fb6wF-LLUGKwFEWhl7YKGfg=');
+  background-size: cover;
+}
+.hours:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.tickets {
+  height: 150px;
+  width: 150px;
+  background-image: url('https://i.guim.co.uk/img/media/b78eba8720659708cba9c1c5338a7e7773a56446/0_85_4288_2572/master/4288.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=5555f1eea3021bd3f20f6726ad9e8038');
+  background-size: cover;
+}
+.tickets:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.events {
+  height: 150px;
+  width: 150px;
+  background-image: url('https://i.pinimg.com/736x/ae/97/86/ae9786b747b35fed1886ad032fa4e928.jpg');
+  background-size: cover;
+}
+.events:hover {
+  color: red;
+  cursor: pointer;
+}
+.page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(blue, #9198e5);
+}
+
+button {
+  margin: 1px;
+  padding: 3px 3px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #F09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+.description {
+  margin: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(225, 218, 218, 0.6);
+  font-size: small;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.ridesReviews {
+  margin: 6px;
+  color: black;
+  background-color: rgb(225, 218, 218, 0.6);
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: x-small;
+  height: 80px;
+}
+
+h1 {
+  text-align: center;
+  font-size:  xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px red; 
+}
+p {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
