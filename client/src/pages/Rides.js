@@ -8,8 +8,7 @@ const Rides = () => {
 
   const getRides = async () => {
       const res = await axios.get('http://localhost:3001/api/rides')
-      console.log( res.data )
-      setRides(res.data )
+      setRides( res.data )
   }
 
   useEffect( ( ) => {
@@ -17,7 +16,7 @@ const Rides = () => {
   },[])
 
   return (
-      <div>
+      <div className='card'>
           { rides.map( ride => (
             
               <Ride info={ ride }

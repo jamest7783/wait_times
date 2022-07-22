@@ -12,5 +12,7 @@ router.get('/rides', async (req, res) => {
 })
 
 router.post('/wait-times', controllers.createWaitTime)
+router.post('/reviews', controllers.createReview)
+
 
 module.exports = router;

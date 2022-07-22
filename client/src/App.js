@@ -5,21 +5,23 @@ import react from 'react'
 import Home from './pages/Home.js'
 import Header from './components/Header'
 import Rides from './pages/Rides'
+import RideDetails from './pages/RideDetails'
 
 const App = () => {
     
   return (
-      <div>
+      <div className='page'>
         < Header />
         <main> 
 
-          <Routes>
-            
-            <Route path='/' element={<Home />} />
-            <Route path='/rides' element={<Rides />} />
-            
+            <Routes>
+              
+              <Route path='/' element={<Home />} />
+              <Route path='/rides' element={<Rides />} />
+              <Route path="/rides/:id" element={<RideDetails/>} />
+    
+            </Routes>
 
-          </Routes>
         </main>
       </div>
     )
